@@ -58,45 +58,33 @@ svg.likes {
 	align-items: center;
 }
 
-.user_info__more_details ul {
-	display: none;
-	list-style: none;
-	padding: 0.5rem;
-	background-color: #6edcea;
-	color: #4f4e4e;
-	border-radius: 5px;
-}
-
-.user_info__more_details ul li:not(:last-child) {
-	margin-bottom: 5px;
-}
-
-.user_info__more_details:hover ul {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	right: -100%;
-}
-
-.user_info__more_details ul::before {
-	content: "";
-	position: absolute;
-	display: block;
-	width: 0;
-	height: 0%;
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-	border-right: 10px solid #6edcea;
-	left: -5px;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
 .user_info__more_details {
 	cursor: pointer;
 	display: flex;
 	align-items: center;
 	position: relative;
+}
+
+.user_info__more_details a {
+	text-decoration: none;
+	color: inherit;
+	border-radius: 5px;
+	transition: all 0.15s ease-in-out;
+}
+
+.user_info__more_details a:visited {
+	color: #0955c7;
+}
+
+.user_info__more_details a:hover {
+	background: #6edcea;
+	color: white;
+	padding: 5px;
+}
+
+.user_info__more_details a:active {
+	color: #6edcea;
+	background: transparent;
 }
 
 .image_feeds {
