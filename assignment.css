@@ -95,11 +95,13 @@ svg.likes {
 .image_feeds__icon {
 	display: flex;
 	align-items: center;
+	font-family: "Monaco", monospace;
 }
 
 .image_feeds__comments {
 	display: flex;
 	align-items: center;
+	font-family: "lucida Handwriting", "cursive";
 }
 
 .image {
